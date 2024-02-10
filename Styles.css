@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap');
+
+body{
+    background: hsl(30, 54%, 90%);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    }
+
+.view{
+    border: 1px;
+    border-radius: 30px;
+    background: hsl(0, 0%, 100%);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1rem;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    & .omelette-img{
+        border-radius: 30px;
+        align-items: center;
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    & .preparation-time{
+        font-family: Outfit;
+        background: hsl(330, 100%, 98%);
+        font-weight: 700;
+        color: hsl(332, 51%, 32%);
+        border: 1px;
+        border-radius: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 3%;
+        padding-bottom: 4%;
+        margin: 1%;
+      }
+    & .titles{
+        color: hsl(14, 45%, 36%);
+        font-family: "Young Serif";
+        font-weight: 400;
+        & h1{
+            color: hsl(24, 5%, 18%);
+        }  
+        & ol{
+            font-family: Outfit;
+            font-weight: 700;
+        }
+        & hr{
+            color: hsl(30, 18%, 87%);
+            margin-top: 10px;
+        }
+    }
+    & .item{
+        color: hsl(30, 10%, 34%);
+        font-weight: 700;
+    }
+    & .text{
+        color: hsl(24, 5%, 18%);
+        font-family: Outfit;
+        font-weight: 400;
+    }
+    & table{
+        td{
+            width:100%;
+        }
+    }
+    @media screen and (max-width: 320px) and (max-height: 480px){
+        .omelette-img{
+            border-radius: 10px;
+            margin-top: 15%;
+        }
+        .preparation-time{
+            font-size: 14px;
+        }
+        .titles{
+            font-size: 15px;
+            h1{
+                font-size: 22px;
+            }    
+            hr{
+                margin-top: 5px;
+            } 
+        }   
+    }
+}
